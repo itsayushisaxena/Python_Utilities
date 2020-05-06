@@ -10,9 +10,10 @@ def check_cpu_usage(percent):
     #cpu_percent() return a float representing the current system-wide
     #CPU utilization as a percentage. 
     usage = psutil.cpu_percent(interval = 1)
+    print("DEBUG: usage:{}".format(usage))
     return usage < percent
 if not check_cpu_usage(75):
-    print("CPU is overloaded")
+    print("ERROR!CPU is overloaded")
 else:
     print("Everything ok")
 
