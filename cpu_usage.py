@@ -1,3 +1,6 @@
+##This code checks whether the CPU is under too much load or not
+
+
 import psutil
 #psutil (python system and process utilities) is a cross-platform
 #library for retrieving information on running processes and
